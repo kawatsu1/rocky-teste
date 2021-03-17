@@ -1,0 +1,186 @@
+/*Estilo para smartphone*/
+@media only screen and (max-width: 767px) {
+	body {
+		margin: 0 auto;
+		background-image: none;
+	}
+
+	/* Estilos para o Header */
+
+	.header {
+		margin: 0 auto;
+		position: absolute;
+		left: 0;
+	}
+
+	.background-top {
+		background: url("../img/mobile/s1\ mobile.png") no-repeat;
+		background-size: 100%;
+		min-height: 800px;
+		background-position: center center;
+	}
+
+	/* Estilos para MENU mobile */
+
+	.nav-logo img {
+		width: 130px;
+		margin: 0 auto;
+	}
+
+	#nav-menu li a {
+		font-size: 16px;
+		font-weight: normal;
+		border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+	}
+
+	.js [data-menu="button"] {
+		position: relative;
+		left: -40px;
+		z-index: 500;
+		display: block;
+		font-size: 28px;
+		background-color: transparent;
+		border: none;
+		color: #fff;
+	}
+
+	.js [data-menu="list"] {
+		border-radius: 0px 20px 20px 0px;
+		display: none;
+		position: absolute;
+		background: rgba(255, 255, 255, 0.2);
+		backdrop-filter: blur(20px);
+		width: 200px;
+		z-index: 400;
+		top: 0;
+		left: 0;
+		padding: 80px 20px 20px 20px;
+	}
+
+	.js [data-menu="list"].active {
+		display: block;
+	}
+
+	.dropdown-menu {
+		position: static;
+		border: none;
+	}
+
+	.js [data-menu="button"].active i::before {
+		content: "\f00d";
+		animation: move 0.5s forwards;
+	}
+
+	@keyframes move {
+		from {
+			opacity: 0;
+			transform: translate3d(0, 30px, 0);
+		}
+		to {
+			opacity: 1;
+			transform: translate3d(0, 0, 0);
+		}
+	}
+
+	/* Estilos Introdução */
+
+	.introducao {
+		margin-top: 0px;
+		padding-top: 0px;
+	}
+
+	.introducao h1 {
+		padding-top: 180px;
+		font-size: 36px;
+	}
+
+	.introducao p {
+		padding: 30% 0;
+	}
+
+	/* Estilos responsivo para a section SOBRE/SERVIÇOS/DIFERENCIAL */
+
+	.sobre {
+		padding: 30px 0px;
+		font-size: 14px;
+		line-height: 20px;
+		padding-right: 0px;
+	}
+
+	.sobre-descricao {
+		margin-top: 30px;
+		width: 100%;
+		font-size: 14px;
+		line-height: 25px;
+	}
+
+	.servico,
+	.diferencial {
+		padding-bottom: 50px;
+	}
+
+	.servico-lista,
+	.diferencial-lista,
+	.footer-conteudo {
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+
+	.servico-lista-item {
+		padding: 35px 25px 5px 25px;
+	}
+
+	.bg-servicos {
+		background-image: url("../img/mobile/s3\ ft1.png");
+		background-size: cover;
+	}
+
+	.bg-mdigital {
+		background-image: url("../img/mobile/s3\ ft2.png");
+		background-size: cover;
+	}
+
+	.bg-implementacoes {
+		background-image: url("../img/mobile/s3\ ft3.png");
+		background-size: cover;
+	}
+
+	.diferencial-lista-item {
+		margin-bottom: -100px;
+		min-width: 100%;
+		height: auto;
+		padding: 80px 25px 5px 25px;
+	}
+
+	.bg-card-1 {
+		background-image: url("../img/mobile/s4\ ft3.png");
+		background-size: contain;
+	}
+
+	.bg-card-2 {
+		background-image: url("../img/mobile/s4\ ft2.png");
+		background-size: contain;
+	}
+
+	.bg-card-3 {
+		background-image: url("../img/mobile/s4\ ft3.png");
+		background-size: contain;
+	}
+
+	/* Estilos para o footer */
+
+	.footer-contato-info {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.footer-contato {
+		padding: 0px 20px 0px 20px;
+	}
+
+	.icon-yellow {
+		padding: 10px;
+	}
+}
+
+/* Final do estilo para smartphone */
